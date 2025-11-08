@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-retroYellow text-black font-sans;
+}
+
+.retro-container {
+  @apply max-w-[1024px] mx-auto bg-white shadow-pixel;
+}
+
+.retro-menu a {
+  @apply px-3 py-1 inline-block text-sm font-bold uppercase tracking-tight;
+}
+
+.pixel-border { box-shadow: 0 0 0 2px #000; }
