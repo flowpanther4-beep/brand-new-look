@@ -2,16 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-retroYellow text-black font-sans;
-}
+/* Tipografía web 2000s */
+:root { color-scheme: light; }
+body { @apply bg-retroYellow text-black; font-family: Arial, Helvetica, Verdana, sans-serif; }
 
+/* Contenedor blanco centrado estilo 2005 */
 .retro-container {
-  @apply max-w-[1024px] mx-auto bg-white shadow-pixel;
+  /* ancho más clásico y centrado */
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  box-shadow: 0 0 0 2px #000; /* borde pixel */
 }
 
-.retro-menu a {
-  @apply px-3 py-1 inline-block text-sm font-bold uppercase tracking-tight;
-}
+/* Menú superior */
+.retro-menu a { @apply px-3 py-1 inline-block text-sm font-bold uppercase tracking-tight; }
 
+/* Utilidad borde pixelado */
 .pixel-border { box-shadow: 0 0 0 2px #000; }
+
+/* Títulos más compactos */
+h1, h2 { letter-spacing: -0.2px; }
